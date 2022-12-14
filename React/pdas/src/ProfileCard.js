@@ -1,4 +1,4 @@
-function ProfileCard({ title, handle }) {
+function ProfileCard({ title, handle, image }) {
     // This is the multiple line version of the destructuring below
     // const title = props.title;
     // const handle = props.handle;
@@ -11,6 +11,7 @@ function ProfileCard({ title, handle }) {
 
     return (
         <div>
+            <img src={image} />
             <div>Title is {title}</div>
             <div>Handle is {handle}</div>
         </div>
